@@ -8,7 +8,7 @@ liability (depositor) customers into personal loan customers. Blanket
 campaigns are expensive and historically convert only a small fraction of
 customers. This project builds a predictive model that identifies which
 customers are most likely to accept a personal loan offer, so the marketing
-team can target them specifically — improving campaign conversion rate and
+team can target them specifically  improving campaign conversion rate and
 reducing cost per acquisition.
 
 ## Dataset
@@ -57,7 +57,7 @@ ownership), which tree-based models capture better than a linear model
 
 ## Business Insight (Feature Importance)
 Income, Education, Family size, and CD Account ownership are the strongest
-predictors of loan acceptance — see `outputs/07_feature_importance.png`.
+predictors of loan acceptance  see `outputs/07_feature_importance.png`.
 **Recommendation:** the marketing team should prioritize customers with
 higher income, higher education levels, and existing CD accounts for the
 next personal loan campaign.
