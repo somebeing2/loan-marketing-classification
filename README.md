@@ -21,13 +21,13 @@ reducing cost per acquisition.
   banking usage, Credit Card ownership
 
 ## Approach
-1. **Data cleaning** — dropped non-predictive identifiers (`ID`, `ZIP Code`);
+1. **Data cleaning**  dropped non-predictive identifiers (`ID`, `ZIP Code`);
    corrected a small number of negative values in `Experience`.
-2. **EDA** — class balance, correlation heatmap, income/education vs. loan
+2. **EDA**  class balance, correlation heatmap, income/education vs. loan
    acceptance.
-3. **Train/test split** — 75/25, stratified on the target (class imbalance
+3. **Train/test split**  75/25, stratified on the target (class imbalance
    is ~90/10).
-4. **Feature scaling** — `StandardScaler`, used for Logistic Regression and
+4. **Feature scaling**  `StandardScaler`, used for Logistic Regression and
    KNN (distance/gradient-based models); not needed for the tree models.
 5. **Models trained** (each tuned via 5-fold `GridSearchCV`, optimizing
    F1-score):
@@ -35,10 +35,10 @@ reducing cost per acquisition.
    - Decision Tree
    - Random Forest
    - K-Nearest Neighbors (KNN)
-6. **Evaluation** — Accuracy, Precision, Recall, F1-Score, ROC-AUC,
+6. **Evaluation**  Accuracy, Precision, Recall, F1-Score, ROC-AUC,
    confusion matrices, ROC curves. F1/ROC-AUC are prioritized over raw
    accuracy because of the class imbalance.
-7. **Leaderboard** — models ranked by F1-Score to identify the best
+7. **Leaderboard**  models ranked by F1-Score to identify the best
    performer.
 
 ## Results — Model Comparison Leaderboard
